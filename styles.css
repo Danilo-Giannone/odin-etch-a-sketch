@@ -8,7 +8,8 @@
 }
 .square{
     flex: 1;
-    border: 1px solid black;
+    opacity: 0.0;
+    background-color: aquamarine;
 }
     
 #grid{
@@ -19,5 +20,5 @@
     justify-content: space-evenly;
     width: 70vh;
     height:70vh;
-    border: 1px solid black;
+    border: 2px solid black;
 }

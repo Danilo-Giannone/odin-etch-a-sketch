@@ -1,5 +1,5 @@
 let grid = document.querySelector("#grid");
-let dimension = 10;
+let dimension = 16;
 window.onload = refresh();
 window.addEventListener('resize', function(event){
     refresh();
@@ -29,8 +29,12 @@ for(let i = 0; i < dimension; i++){
 }
 let squares = document.querySelectorAll(".square");
 squares.forEach(square => {
-    square.addEventListener("mouseover", () => {
-        console.log(square.id);
-        
-    })
+    square.addEventListener("mouseover", function (e){
+        let opacity = e.target.style.opacity;
+            if (opacity) { 
+                e.target.style.opacity = Number(opacity) + 0.1 ;
+            } else { 
+                e.target.style.backgroundColor = '#' + (Math.random().toString(16) + "000000").substring(2,8);
+                e.target.style.opacity = 0.1;
+            }});
 });
