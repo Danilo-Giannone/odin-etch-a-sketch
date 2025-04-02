@@ -1,11 +1,23 @@
-.row,
-.square,
-#grid{
-    border: 1px solid black;
-}
+
 
 .row{
-    height: 5vw;
     display: flex;
     justify-content: space-evenly;
+    flex: 1;
+
+}
+.square{
+    flex: 1;
+    border: 1px solid black;
+}
+    
+#grid{
+    justify-self: center;
+    margin: 10vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    width: 70vh;
+    height:70vh;
+    border: 1px solid black;
 }
