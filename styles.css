@@ -22,3 +22,19 @@
     height:70vh;
     border: 2px solid black;
 }
+.btn{
+    display: flex;
+    justify-content: center;
+}
+button{
+    padding: 1vh;
+    border: 3px solid blue;
+    border-radius: 15px;
+    margin: 2vh 0vh 0vh;
+    font-family:'Times New Roman', Times, serif;
+    font-weight: 800;
+    font-size: 2vh;
+    color: black;
+    background-color: aqua;
+
+}
