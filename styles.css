@@ -1,0 +1,11 @@
+.row,
+.square,
+#grid{
+    border: 1px solid black;
+}
+
+.row{
+    height: 5vw;
+    display: flex;
+    justify-content: space-evenly;
+}
