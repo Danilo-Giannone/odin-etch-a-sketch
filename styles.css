@@ -12,15 +12,25 @@
     background-color: aquamarine;
 }
     
-#grid{
+
+#container{
+    display: flex;
     justify-self: center;
     margin: 10vh;
+    width: 70vh;
+    height:70vh;
+    
+    
+ 
+}
+.grid{
+    flex: 1;
     display: flex;
     flex-direction: column;
     justify-content: space-evenly;
-    width: 70vh;
-    height:70vh;
     border: 2px solid black;
+    
+
 }
 .btn{
     display: flex;
